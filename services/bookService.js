@@ -7,7 +7,6 @@ export const fetchAllbooks = async () => {
 }
 
 const doesBookExist = async (book) => {
-
     let existing;
     if(Object.hasOwn(book, "id")) {
         existing = await bookModel.findBookById(book.id);
